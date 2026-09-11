@@ -3,36 +3,107 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Daniel Hughes — custom black & grey realism tattoo artist and private tattoo studio.">
+  <meta name="description" content="Daniel Hughes creates custom black & grey realism tattoos from a private studio in South London. Enquire about future sessions.">
   <meta name="robots" content="noindex, nofollow">
-  <title>Dan Hughes Tattoos</title>
+  <meta name="theme-color" content="#090909">
+  <title>Dan Hughes Tattoos — Custom Black &amp; Grey Realism</title>
   <style>
-    :root { color-scheme: dark; --bg:#090909; --fg:#f1f1ef; --muted:#969692; --line:rgba(255,255,255,.14); }
+    :root { color-scheme:dark; --bg:#080808; --panel:rgba(255,255,255,.045); --fg:#f4f3ef; --muted:#aaa9a3; --line:rgba(255,255,255,.13); --accent:#d9d6cc; }
     * { box-sizing:border-box; }
-    html,body { margin:0; min-height:100%; }
-    body { min-height:100vh; background:radial-gradient(circle at 50% 35%, #191919 0, var(--bg) 48%); color:var(--fg); font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    main { min-height:100vh; display:grid; place-items:center; padding:32px; }
-    .shell { width:min(760px,100%); text-align:center; }
-    .eyebrow { margin:0 0 28px; font-size:11px; letter-spacing:.24em; text-transform:uppercase; color:var(--muted); }
-    h1 { margin:0; font-family:Georgia, "Times New Roman", serif; font-size:clamp(52px,10vw,112px); line-height:.9; font-weight:400; letter-spacing:-.055em; }
-    .descriptor { margin:28px 0 0; font-size:clamp(16px,2vw,20px); letter-spacing:.03em; }
-    .copy { max-width:520px; margin:18px auto 0; color:var(--muted); font-size:15px; line-height:1.7; }
-    .status { display:inline-flex; margin-top:40px; padding:12px 18px; border:1px solid var(--line); border-radius:999px; font-size:10px; letter-spacing:.2em; text-transform:uppercase; }
-    footer { position:fixed; inset:auto 0 24px; text-align:center; color:#666; font-size:11px; letter-spacing:.08em; }
-    @media (max-width:600px) { main { padding:24px; } h1 { font-size:58px; } footer { bottom:18px; } }
+    html { scroll-behavior:smooth; }
+    body { margin:0; background:radial-gradient(circle at 50% 0%, #1a1a19 0, var(--bg) 42%); color:var(--fg); font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+    a { color:inherit; }
+    .wrap { width:min(1120px,calc(100% - 40px)); margin:auto; }
+    header { padding:22px 0; border-bottom:1px solid var(--line); }
+    nav { display:flex; align-items:center; justify-content:space-between; gap:24px; }
+    .brand { text-decoration:none; font-size:12px; font-weight:600; letter-spacing:.18em; text-transform:uppercase; }
+    .nav-link { color:var(--muted); font-size:12px; text-decoration:none; }
+    .hero { min-height:78vh; display:grid; align-items:center; padding:72px 0 80px; }
+    .hero-grid { display:grid; grid-template-columns:1.2fr .8fr; gap:70px; align-items:end; }
+    .eyebrow { margin:0 0 24px; color:var(--muted); font-size:10px; letter-spacing:.24em; text-transform:uppercase; }
+    h1,h2 { font-family:Georgia,"Times New Roman",serif; font-weight:400; }
+    h1 { margin:0; max-width:760px; font-size:clamp(58px,9vw,120px); line-height:.88; letter-spacing:-.065em; }
+    .hero-copy { max-width:510px; margin:30px 0 0; color:var(--muted); font-size:17px; line-height:1.7; }
+    .actions { display:flex; flex-wrap:wrap; gap:12px; margin-top:34px; }
+    .button { display:inline-flex; justify-content:center; align-items:center; min-height:50px; padding:0 22px; border:1px solid var(--line); border-radius:999px; text-decoration:none; font-size:12px; letter-spacing:.1em; text-transform:uppercase; }
+    .button.primary { background:var(--fg); color:#090909; border-color:var(--fg); }
+    .hero-note { padding:24px; border:1px solid var(--line); border-radius:20px; background:var(--panel); backdrop-filter:blur(18px); }
+    .hero-note strong { display:block; margin-bottom:10px; font-size:13px; }
+    .hero-note p { margin:0; color:var(--muted); font-size:13px; line-height:1.7; }
+    section { padding:96px 0; border-top:1px solid var(--line); }
+    .section-head { display:flex; justify-content:space-between; gap:30px; align-items:end; margin-bottom:32px; }
+    .section-head p { max-width:460px; margin:0; color:var(--muted); line-height:1.7; font-size:14px; }
+    h2 { margin:0; font-size:clamp(38px,6vw,72px); line-height:.95; letter-spacing:-.05em; }
+    .gallery { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+    .gallery-item { min-height:360px; display:grid; place-items:center; border:1px solid var(--line); border-radius:18px; background:linear-gradient(145deg,#181817,#0d0d0d); color:#666; text-align:center; overflow:hidden; }
+    .gallery-item span { padding:24px; font-size:10px; letter-spacing:.16em; text-transform:uppercase; }
+    .offer { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+    .card { padding:30px; border:1px solid var(--line); border-radius:20px; background:var(--panel); }
+    .card .number { color:#777; font-size:11px; letter-spacing:.16em; }
+    .card h3 { margin:48px 0 12px; font-size:20px; font-weight:500; }
+    .card p { margin:0; color:var(--muted); line-height:1.7; font-size:14px; }
+    .cta { text-align:center; padding:110px 0; }
+    .cta h2 { max-width:760px; margin:0 auto; }
+    .cta p { max-width:520px; margin:24px auto 0; color:var(--muted); line-height:1.7; }
+    .cta .actions { justify-content:center; }
+    .fine { margin-top:20px; color:#686862; font-size:11px; }
+    footer { padding:26px 0 36px; border-top:1px solid var(--line); color:#666; font-size:11px; letter-spacing:.08em; }
+    @media (max-width:800px) { .hero-grid,.offer { grid-template-columns:1fr; gap:36px; } .hero { min-height:auto; padding:72px 0; } .gallery { grid-template-columns:1fr; } .gallery-item { min-height:280px; } section { padding:72px 0; } }
+    @media (max-width:520px) { .wrap { width:min(100% - 28px,1120px); } header { padding:18px 0; } .nav-link { display:none; } h1 { font-size:58px; } .actions,.button { width:100%; } .button { padding:0 16px; } }
   </style>
 </head>
 <body>
-  <main>
-    <section class="shell" aria-labelledby="title">
-      <p class="eyebrow">Private Tattoo Studio</p>
-      <h1 id="title">Daniel Hughes</h1>
-      <p class="descriptor">Custom Black &amp; Grey Realism</p>
-      <p class="copy">Bespoke large-scale tattoo work, designed around the individual and the body.</p>
-      <div class="status">Coming Soon</div>
-      <p class="copy">Custom tattoo enquiries will reopen shortly.</p>
+  <header>
+    <div class="wrap"><nav><a class="brand" href="#top">Dan Hughes Tattoos</a><a class="nav-link" href="#enquire">Enquire about a session</a></nav></div>
+  </header>
+
+  <main id="top">
+    <section class="hero" style="border-top:0">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="eyebrow">Private Studio · South London</p>
+          <h1>Custom black &amp; grey realism.</h1>
+          <p class="hero-copy">Large-scale, bespoke tattoo work designed around the individual and the form of the body — with every piece planned as a complete composition.</p>
+          <div class="actions"><a class="button primary" href="#enquire">Enquire about a future session</a><a class="button" href="#work">View the work</a></div>
+        </div>
+        <aside class="hero-note"><strong>Taking future enquiries</strong><p>Sessions can be reserved ahead of the tattoo date. Start with an enquiry and we'll establish the project, scope and suitable booking.</p></aside>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head"><h2>The work.</h2><p>A focused selection of large-scale custom realism. Replace the image placeholders below with the strongest portfolio pieces before sending paid traffic.</p></div>
+        <div class="gallery">
+          <div class="gallery-item"><span>Portfolio image · sleeve / realism</span></div>
+          <div class="gallery-item"><span>Portfolio image · back piece / realism</span></div>
+          <div class="gallery-item"><span>Portfolio image · custom project</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap">
+        <div class="section-head"><h2>Built for the project.</h2><p>The aim isn't to fit a generic design into available space. Large pieces are considered around anatomy, movement, scale and the overall composition.</p></div>
+        <div class="offer">
+          <article class="card"><span class="number">01 / CUSTOM</span><h3>Designed around you</h3><p>Ideas, references and placement are developed into a bespoke composition rather than selecting a catalogue design.</p></article>
+          <article class="card"><span class="number">02 / LARGE SCALE</span><h3>Planned as a complete piece</h3><p>For sleeves, backs and other substantial projects, the work is structured across sessions so the final result reads as one composition.</p></article>
+          <article class="card"><span class="number">03 / PRIVATE</span><h3>One-to-one studio experience</h3><p>A private studio environment with the time and attention required for detailed realism.</p></article>
+          <article class="card"><span class="number">04 / FUTURE DATES</span><h3>Reserve ahead</h3><p>You don't need to be tattooed immediately. Enquire now to discuss a project and secure a suitable future session.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="enquire">
+      <div class="wrap">
+        <p class="eyebrow">Start your project</p>
+        <h2>Have a piece in mind?</h2>
+        <p>Send the idea, placement and any reference material. We'll establish whether the project is a good fit and discuss the next available booking.</p>
+        <div class="actions"><a class="button primary" href="mailto:dontdoadan@icloud.com?subject=Tattoo%20Enquiry">Start an enquiry</a></div>
+        <p class="fine">Email: dontdoadan@icloud.com</p>
+      </div>
     </section>
   </main>
-  <footer>© Daniel Hughes</footer>
+
+  <footer><div class="wrap">© Daniel Hughes · Custom Black &amp; Grey Realism</div></footer>
 </body>
 </html>
