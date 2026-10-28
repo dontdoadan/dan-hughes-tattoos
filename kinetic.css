@@ -5,7 +5,7 @@
  */
 :root{--k-ink:#151614;--k-deep:#111310;--k-surface:#242722;--k-cream:#f0efe8;--k-acid:#dfff36;--k-muted:#adafa2;--k-line:rgba(237,238,223,.19);--k-condensed:"Arial Narrow","Helvetica Neue",Arial,sans-serif;--k-serif:"Iowan Old Style","Baskerville",Georgia,serif}
 html{scroll-padding-top:90px}
-body{overflow-x:clip}
+body{overflow-x:clip}\nbody.menu-open{overflow:hidden}
 .global-header{background:rgba(16,18,15,.97);border-color:rgba(255,255,255,.15)}
 .global-header-inner{min-height:76px}
 .global-wordmark{font-size:14px;letter-spacing:-.05em;font-weight:900;line-height:.92}
@@ -182,7 +182,7 @@ body{overflow-x:clip}
 @media(max-width:480px){
  .global-wordmark{font-size:12px}
  .global-nav-cta{min-height:40px;padding:0 10px;font-size:10px}
- .mobile-navigation summary{min-width:60px;padding-left:4px}
+ .mobile-navigation summary{min-width:49px;padding-left:0}
  .mobile-navigation summary:before{font-size:10px}
  .mobile-navigation summary .menu-lines{display:none}
  .k-hero-inner{min-height:670px}
