@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="Start a private tattoo commission with Daniel Hughes. Tell us about your custom black and grey realism tattoo idea and request a consultation.">
+  <title>Start Your Project — Daniel Hughes Tattoos</title>
+  <style>
+    :root{color-scheme:dark;--ink:#111210;--night:#181917;--ivory:#eae7df;--paper:#f4f1eb;--stone:#d2cec4;--soft:#9f9d95;--gold:#c2a483;--line:rgba(234,231,223,.15);--text:#282823}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--ink);color:var(--ivory);font-family:Arial,Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+    button,input,select,textarea{font:inherit}button{cursor:pointer}a{color:inherit}
+    :focus-visible{outline:2px solid #9e7851;outline-offset:4px}.skip{position:absolute;top:-80px;left:15px;background:var(--paper);color:var(--text);padding:12px;z-index:20}.skip:focus{top:12px}
+    .site-header{max-width:1540px;margin:auto;padding:27px clamp(22px,4vw,70px);display:flex;align-items:center;justify-content:space-between;gap:20px}
+    .wordmark{font-size:11px;font-weight:700;letter-spacing:.23em;text-transform:uppercase;text-decoration:none;line-height:1.5}
+    .return{font-size:11px;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;color:#c5c1b7;display:inline-flex;align-items:center;gap:12px}.return span{font-size:20px;line-height:0}
+    .layout{display:grid;grid-template-columns:minmax(360px,.88fr) minmax(540px,1.12fr);max-width:1540px;margin:0 auto;min-height:calc(100vh - 90px)}
+    .editorial{padding:clamp(54px,6vw,100px) clamp(28px,6vw,100px) 50px;position:relative;overflow:hidden;display:flex;flex-direction:column;justify-content:space-between;min-height:700px;background:radial-gradient(circle at 85% 47%,rgba(171,140,105,.12) 0,transparent 41%),linear-gradient(145deg,#1a1b19,#10110f)}
+    .editorial:before{content:"";position:absolute;inset:22px;border:1px solid rgba(234,231,223,.07);pointer-events:none}
+    .eyebrow{font-size:10px;text-transform:uppercase;letter-spacing:.23em;color:var(--gold);line-height:1.6}
+    h1{font-family:Georgia,'Times New Roman',serif;font-weight:400;letter-spacing:-.07em;font-size:clamp(62px,6.2vw,110px);line-height:.96;margin:30px 0 28px;max-width:630px}
+    h1 em{font-weight:400;color:#c7ad91}.lead{font-size:15px;line-height:1.8;color:#afafa6;max-width:390px;margin:0}
+    .editorial-bottom{position:relative;z-index:1}.seal{height:225px;width:225px;border-radius:100%;border:1px solid #474139;display:grid;place-items:center;position:relative;margin:40px 0 32px auto}
+    .seal:before{content:"";position:absolute;inset:17px;border:1px solid #645b50;border-radius:50%}.seal:after{content:"";position:absolute;inset:50%;width:1px;height:174%;background:linear-gradient(to bottom,transparent,#665848,transparent);transform:translate(-50%,-50%) rotate(45deg);pointer-events:none}
+    .seal b{font-family:Georgia,serif;font-size:88px;letter-spacing:-.1em;font-weight:400;color:#9b8d7a;margin-left:-10px}
+    .editorial-foot{display:flex;gap:15px;align-items:center;justify-content:space-between;border-top:1px solid var(--line);padding-top:24px;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#96948e}
+    .form-panel{background:var(--paper);color:var(--text);padding:clamp(32px,5vw,78px) clamp(24px,5.7vw,88px) 46px;min-width:0;display:flex;flex-direction:column}
+    .form-top{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#7b7870;text-transform:uppercase;font-size:10px;letter-spacing:.19em}
+    .form-top strong{font-size:11px;color:#34332f;font-weight:600}
+    .progress{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin:20px 0 clamp(34px,4vw,56px)}.progress span{height:2px;background:#d8d4c9;transition:background .25s ease}.progress span.active{background:#292823}
+    .stage-kicker{text-transform:uppercase;letter-spacing:.19em;font-size:10px;color:#8f795f;font-weight:600;margin:0 0 15px}
+    .step-title{font:400 clamp(39px,4.3vw,64px)/1.05 Georgia,'Times New Roman',serif;letter-spacing:-.045em;margin:0 0 15px}
+    .step-copy{max-width:520px;font-size:14px;color:#77736b;line-height:1.8;margin:0 0 34px}
+    fieldset{min-width:0;border:0;padding:0;margin:0}fieldset[hidden]{display:none!important}
+    .group{margin:0 0 26px}.field-label,.group legend{display:block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:#494640;margin:0 0 12px}
+    .field-label small{font-weight:400;letter-spacing:0;text-transform:none;color:#8d887f;font-size:11px}
+    .choices{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+    .choice{position:relative;min-width:0}.choice input{position:absolute;opacity:0;inset:0;cursor:pointer;width:100%;height:100%;z-index:2}
+    .choice label{min-height:65px;padding:16px 15px;display:flex;align-items:center;justify-content:space-between;gap:8px;border:1px solid #d7d2c8;background:rgba(255,255,255,.3);font-size:12px;line-height:1.4;color:#615c52;transition:background .17s,border-color .17s,color .17s}
+    .choice label:after{content:"+";color:#aba399;font-size:17px;line-height:1}.choice input:focus-visible+label{outline:2px solid #997c5a;outline-offset:2px}
+    .choice input:checked+label{background:#242521;border-color:#242521;color:#f7f3ea}.choice input:checked+label:after{content:"✓";color:#cab196}
+    .field{display:block;width:100%;background:#fffefb;border:1px solid #d4cec3;outline:0;border-radius:0;padding:15px 16px;color:#2a2925;font-size:14px;line-height:1.5;transition:border-color .15s,box-shadow .15s;min-height:52px}
+    .field:focus{border-color:#8b7159;box-shadow:0 0 0 2px rgba(139,113,89,.12)}.field::placeholder{color:#a7a29a}
+    textarea.field{min-height:130px;resize:vertical}select.field{appearance:none;background:#fffefb url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath d='m6 9 6 6 6-6' stroke='%235b5851' stroke-width='2' fill='none'/%3E%3C/svg%3E") right 17px center/12px no-repeat;padding-right:40px}
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+    .hint{font-size:11px;line-height:1.65;color:#8d887d;margin:9px 0 0}
+    .consent{display:flex;align-items:flex-start;gap:12px;margin:15px 0 0;font-size:12px;line-height:1.7;color:#666159}
+    .consent input{flex:none;margin-top:3px;accent-color:#22221f;width:16px;height:16px}.consent a{text-underline-offset:3px}
+    .form-foot{margin-top:auto;padding-top:24px}.form-actions{display:flex;align-items:center;justify-content:space-between;gap:16px}
+    .btn{min-height:55px;border:1px solid #262722;padding:0 22px;text-transform:uppercase;letter-spacing:.15em;font-size:11px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:24px;transition:background .15s,color .15s,transform .15s}
+    .btn:hover{transform:translateY(-1px)}.btn-main{background:#22231f;color:#f2eee6;min-width:205px}.btn-main:hover{background:#4a4035}
+    .btn-back{border:0;background:transparent;padding:0;color:#615b52;min-width:65px;justify-content:flex-start}
+    .btn[hidden]{display:none!important}.submit-status{font-size:12px;color:#a0442f;min-height:17px;margin:15px 0 0;line-height:1.6}
+    .micro{border-top:1px solid #dad5ca;margin-top:30px;padding-top:21px;display:flex;justify-content:space-between;gap:18px;color:#898278;font-size:10px;line-height:1.7}
+    .success{padding:38px 0 22px}.success[hidden]{display:none}.success-mark{width:66px;height:66px;border:1px solid #9a866d;border-radius:50%;display:grid;place-items:center;font:34px Georgia,serif;margin-bottom:40px;color:#847055}
+    .success h2{font:400 clamp(46px,4vw,70px)/1.05 Georgia,serif;letter-spacing:-.06em;margin:0 0 24px}.success p{line-height:1.85;color:#6c675f;font-size:14px;max-width:490px}
+    .details{margin:29px 0;padding:22px 0;border-top:1px solid #dad5ca;border-bottom:1px solid #dad5ca;color:#4a463f;font-size:12px;line-height:2}
+    .details strong{font-weight:700}.sr-only{position:absolute!important;height:1px;width:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+    .trap{position:absolute;left:-9999px;opacity:0;height:0;overflow:hidden}
+    @media(max-width:1050px){.layout{grid-template-columns:minmax(300px,.8fr) minmax(420px,1.2fr)}.editorial{padding:70px 40px 40px}h1{font-size:65px}.seal{height:175px;width:175px}.seal b{font-size:65px}.form-panel{padding:50px 38px 35px}}
+    @media(max-width:760px){.site-header{padding:22px}.layout{display:block;min-height:0}.editorial{min-height:0;padding:48px 28px 38px}.editorial:before{inset:14px}.eyebrow{font-size:9px}h1{font-size:clamp(56px,12vw,80px);margin:24px 0}.lead{font-size:13px}.seal{display:none}.editorial-foot{margin-top:40px}.form-panel{padding:42px 26px 30px}.form-top{font-size:9px}.progress{margin:18px 0 38px}.step-title{font-size:45px}}
+    @media(max-width:430px){.site-header{padding:18px 20px}.return{font-size:10px}.return span{display:none}.editorial{padding:44px 24px 30px}h1{font-size:56px}.form-panel{padding:34px 20px 32px}.choices{gap:7px}.choice label{padding:12px 10px;min-height:68px;font-size:11px}.two{grid-template-columns:1fr;gap:0}.form-actions{gap:8px}.btn-main{min-width:0;flex:1;padding:0 14px}.micro{display:block}.micro span{display:block;margin:5px 0}.step-title{font-size:39px}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#project-form">Skip to enquiry form</a>
+  <header class="site-header">
+    <a class="wordmark" href="/">Daniel Hughes<br>Tattoos</a>
+    <a class="return" href="/"><span aria-hidden="true">←</span> Return to the studio</a>
+  </header>
+  <main class="layout">
+    <aside class="editorial" aria-label="About your commission">
+      <div>
+        <p class="eyebrow">Private tattoo studio / South London<br>Custom black &amp; grey realism</p>
+        <h1>Something<br>worth <em>keeping.</em></h1>
+        <p class="lead">Every considered piece begins with a conversation. Tell me what you have in mind — the story, the placement, the scale — and we’ll explore what it could become.</p>
+      </div>
+      <div class="editorial-bottom">
+        <div class="seal" aria-hidden="true"><b>DH</b></div>
+        <div class="editorial-foot"><span>Made for you. Never off the shelf.</span><span>01 / 03</span></div>
+      </div>
+    </aside>
+    <section class="form-panel" id="project-form" aria-label="Tattoo commission enquiry">
+      <div id="form-shell">
+        <div class="form-top"><span>Commission enquiry</span><strong id="stage-number">Step 01 / 03</strong></div>
+        <div class="progress" aria-label="Form progress" role="img"><span class="active"></span><span></span><span></span></div>
+        <form id="enquiry-form" novalidate>
+          <div class="trap" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" autocomplete="off" tabindex="-1"></div>
+          <fieldset data-step="0">
+            <legend class="sr-only">Your tattoo idea</legend>
+            <p class="stage-kicker">01 / The idea</p>
+            <h2 class="step-title">What do you have in mind?</h2>
+            <p class="step-copy">Start with the basics. There’s no need for a finished design — your ideas are enough.</p>
+            <div class="group">
+              <div class="field-label" id="type-label">What kind of project is it? *</div>
+              <div class="choices" role="radiogroup" aria-labelledby="type-label">
+                <div class="choice"><input id="type1" type="radio" name="projectType" value="full-sleeve" required><label for="type1">Full sleeve</label></div>
+                <div class="choice"><input id="type2" type="radio" name="projectType" value="half-sleeve"><label for="type2">Half sleeve</label></div>
+                <div class="choice"><input id="type3" type="radio" name="projectType" value="leg-sleeve"><label for="type3">Leg sleeve</label></div>
+                <div class="choice"><input id="type4" type="radio" name="projectType" value="back-piece"><label for="type4">Back piece</label></div>
+                <div class="choice"><input id="type5" type="radio" name="projectType" value="chest-piece"><label for="type5">Chest piece</label></div>
+                <div class="choice"><input id="type6" type="radio" name="projectType" value="other-large-scale"><label for="type6">Other large-scale</label></div>
+                <div class="choice"><input id="type7" type="radio" name="projectType" value="smaller-piece"><label for="type7">Smaller piece</label></div>
+                <div class="choice"><input id="type8" type="radio" name="projectType" value="unsure"><label for="type8">I'm not sure yet</label></div>
+              </div>
+            </div>
+            <div class="group"><label class="field-label" for="placement">Where on the body? *</label><input class="field" id="placement" name="placement" required minlength="2" maxlength="120" autocomplete="off" placeholder="e.g. Outer forearm, full left arm, upper back"></div>
+            <div class="group"><label class="field-label" for="description">Tell me about your idea *</label><textarea class="field" id="description" name="description" required minlength="15" maxlength="3000" placeholder="Themes, imagery, meaning, style, composition — whatever you have in mind."></textarea><p class="hint">A few sentences are perfect. We can work through the finer details together.</p></div>
+          </fieldset>
+          <fieldset data-step="1" hidden>
+            <legend class="sr-only">Project planning</legend>
+            <p class="stage-kicker">02 / The plan</p>
+            <h2 class="step-title">Let's shape the project.</h2>
+            <p class="step-copy">A little context helps me understand the scale of the work and plan the right amount of time for it.</p>
+            <div class="group">
+              <div class="field-label" id="sessions-label">How much work are you planning? *</div>
+              <div class="choices" role="radiogroup" aria-labelledby="sessions-label">
+                <div class="choice"><input type="radio" id="s1" name="sessions" value="single" required><label for="s1">One session / smaller piece</label></div>
+                <div class="choice"><input type="radio" id="s2" name="sessions" value="multiple"><label for="s2">Multiple sessions</label></div>
+                <div class="choice"><input type="radio" id="s3" name="sessions" value="unsure"><label for="s3">I'd like your guidance</label></div>
+              </div>
+            </div>
+            <div class="two">
+              <div class="group"><label class="field-label" for="timeframe">When would you like to start?</label><select class="field" id="timeframe" name="timeframe"><option value="">Select an approximate time</option><option value="as-soon-as-possible">As soon as practical</option><option value="within-1-month">Within a month</option><option value="1-3-months">1–3 months</option><option value="3-6-months">3–6 months</option><option value="flexible">I'm flexible</option></select></div>
+              <div class="group"><label class="field-label" for="budget">Approximate project budget</label><select class="field" id="budget" name="budgetRange"><option value="">Prefer not to say / unsure</option><option value="400-800">£400–£800</option><option value="800-1600">£800–£1,600</option><option value="1600-3200">£1,600–£3,200</option><option value="3200-plus">£3,200+</option></select></div>
+            </div>
+            <div class="group"><label class="field-label" for="referenceLinks">Reference links <small>(optional)</small></label><textarea class="field" id="referenceLinks" name="referenceLinks" maxlength="1000" style="min-height:86px" placeholder="Pinterest boards, Instagram posts, or links to imagery you like"></textarea><p class="hint">You can also share images by email after we discuss your enquiry.</p></div>
+            <p class="hint" style="border-left:2px solid #bba285;padding-left:14px">Full-day sessions are £400. A 50% deposit is required to confirm a booking, paid at least 7 days before the appointment to allow for design preparation. Submitting this enquiry does not reserve a date.</p>
+          </fieldset>
+          <fieldset data-step="2" hidden>
+            <legend class="sr-only">Your contact details</legend>
+            <p class="stage-kicker">03 / The conversation</p>
+            <h2 class="step-title">Let's talk about it.</h2>
+            <p class="step-copy">Leave your details and I'll review your project. This is an enquiry, not a confirmed appointment.</p>
+            <div class="group"><label class="field-label" for="fullName">Your full name *</label><input class="field" id="fullName" name="fullName" required autocomplete="name" minlength="2" maxlength="120" placeholder="Your name"></div>
+            <div class="group"><label class="field-label" for="email">Email address *</label><input class="field" type="email" id="email" name="email" required maxlength="254" autocomplete="email" placeholder="you@example.com"></div>
+            <div class="two">
+              <div class="group"><label class="field-label" for="phone">Phone <small>(optional)</small></label><input class="field" type="tel" id="phone" name="phone" maxlength="45" autocomplete="tel" placeholder="Your phone number"></div>
+              <div class="group"><label class="field-label" for="instagram">Instagram <small>(optional)</small></label><input class="field" id="instagram" name="instagram" maxlength="100" placeholder="@username"></div>
+            </div>
+            <div class="group"><label class="field-label" for="preferredContact">Preferred way to contact you *</label><select class="field" id="preferredContact" name="preferredContact" required><option value="email">Email</option><option value="phone">Phone</option><option value="instagram">Instagram</option></select><p class="hint" id="contact-hint">Please provide a phone number or Instagram handle if you choose it above.</p></div>
+            <label class="consent"><input type="checkbox" name="ageConfirmed" required><span>I confirm I am 18 years of age or older. *</span></label>
+            <label class="consent"><input type="checkbox" name="privacyAccepted" required><span>I understand my details will be used to review and respond to my enquiry, as explained in the <a href="/privacy.html" target="_blank" rel="noopener">privacy notice</a>. *</span></label>
+            <label class="consent"><input type="checkbox" name="marketingConsent"><span>I'd also like to hear about occasional available sessions and studio updates. <em>(Optional)</em></span></label>
+          </fieldset>
+          <div class="form-foot">
+            <div class="form-actions">
+              <button class="btn btn-back" type="button" id="back" hidden>← Back</button>
+              <span id="back-placeholder" aria-hidden="true"></span>
+              <button class="btn btn-main" type="button" id="next">Continue <span aria-hidden="true">→</span></button>
+              <button class="btn btn-main" type="submit" id="submit" hidden>Send enquiry <span aria-hidden="true">→</span></button>
+            </div>
+            <p class="submit-status" id="status" role="alert" aria-live="polite"></p>
+            <div class="micro"><span>Private studio · South London</span><span>Prefer email? <a href="mailto:dontdoadan@icloud.com?subject=Tattoo%20Enquiry">Contact the studio directly</a></span></div>
+          </div>
+        </form>
+      </div>
+      <div class="success" id="success" hidden tabindex="-1" role="status" aria-live="polite">
+        <div class="success-mark" aria-hidden="true">✓</div>
+        <p class="stage-kicker">Your enquiry has been received</p>
+        <h2>Every great piece<br>starts somewhere.</h2>
+        <p>Thank you for sharing your idea. Your enquiry has been saved and will be reviewed. If the project is a good fit, I'll get in touch using your preferred contact method to discuss next steps.</p>
+        <div class="details"><strong>What happens next?</strong><br>We'll discuss the concept, scope and potential dates. Any appointment will only be confirmed once the deposit has been paid.</div>
+        <a class="btn btn-main" href="/" style="text-decoration:none;max-width:250px">Return to the studio ↗</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      'use strict';
+      const ENDPOINT = 'https://ukaxsqwnkoqbbsufpzga.supabase.co/functions/v1/tattoo-enquiry-intake';
+      const form = document.getElementById('enquiry-form');
+      const stages = [...form.querySelectorAll('fieldset[data-step]')];
+      const bars = [...document.querySelectorAll('.progress span')];
+      const status = document.getElementById('status');
+      const next = document.getElementById('next');
+      const back = document.getElementById('back');
+      const submit = document.getElementById('submit');
+      let stage = 0, sending = false;
+      const requestId = crypto.randomUUID();
+      function go(target) {
+        stage = Math.min(2, Math.max(0, target));
+        stages.forEach((section, i) => { section.hidden = i !== stage; });
+        bars.forEach((bar, i) => bar.classList.toggle('active', i <= stage));
+        document.getElementById('stage-number').textContent = 'Step 0' + (stage + 1) + ' / 03';
+        back.hidden = stage === 0;
+        document.getElementById('back-placeholder').hidden = stage !== 0;
+        next.hidden = stage === 2;
+        submit.hidden = stage !== 2;
+        status.textContent = '';
+        if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) document.getElementById('project-form').scrollIntoView();
+        else document.getElementById('project-form').scrollIntoView({behavior:'smooth',block:'start'});
+        stages[stage].querySelector('.step-title').setAttribute('tabindex','-1');
+        stages[stage].querySelector('.step-title').focus({preventScroll:true});
+      }
+      function validateCurrent() {
+        const checkedRadioNames = new Set();
+        const inputs = [...stages[stage].querySelectorAll('input,select,textarea')];
+        for (const field of inputs) {
+          if (field.type === 'radio') {
+            if (checkedRadioNames.has(field.name)) continue;
+            checkedRadioNames.add(field.name);
+            if (![...stages[stage].querySelectorAll('input[name="' + field.name + '"]')].some(x => x.checked)) {
+              status.textContent = 'Please choose an option before continuing.';
+              field.focus(); return false;
+            }
+          } else if (!field.checkValidity()) {
+            status.textContent = field.validity.valueMissing ? 'Please complete the required fields.' : 'Please check the highlighted field.';
+            field.focus(); field.reportValidity(); return false;
+          }
+        }
+        if (stage === 2) {
+          const method = form.elements.preferredContact.value;
+          const requiredField = method === 'phone' ? form.elements.phone : method === 'instagram' ? form.elements.instagram : null;
+          if (requiredField && !requiredField.value.trim()) {
+            status.textContent = 'Please add your ' + (method === 'phone' ? 'phone number' : 'Instagram handle') + ' or select email.';
+            requiredField.focus(); return false;
+          }
+        }
+        status.textContent = '';
+        return true;
+      }
+      next.addEventListener('click', () => { if (validateCurrent()) go(stage + 1); });
+      back.addEventListener('click', () => go(stage - 1));
+      form.addEventListener('keydown', event => {
+        if (event.key === 'Enter' && event.target.tagName !== 'TEXTAREA' && stage < 2) {
+          event.preventDefault(); if (validateCurrent()) go(stage + 1);
+        }
+      });
+      form.addEventListener('submit', async event => {
+        event.preventDefault();
+        if (sending || !validateCurrent()) return;
+        const f = new FormData(form);
+        const query = new URLSearchParams(location.search);
+        const body = {
+          requestId, website:f.get('website'), fullName:f.get('fullName'), email:f.get('email'),
+          phone:f.get('phone'), instagram:f.get('instagram'), preferredContact:f.get('preferredContact'),
+          projectType:f.get('projectType'), placement:f.get('placement'), sessions:f.get('sessions'),
+          description:f.get('description'), referenceLinks:f.get('referenceLinks'),
+          budgetRange:f.get('budgetRange'), timeframe:f.get('timeframe'),
+          ageConfirmed:f.get('ageConfirmed') === 'on',
+          privacyAccepted:f.get('privacyAccepted') === 'on',
+          marketingConsent:f.get('marketingConsent') === 'on',
+          sourcePage:location.pathname,
+          utm:{source:query.get('utm_source') || '',medium:query.get('utm_medium') || '',campaign:query.get('utm_campaign') || ''}
+        };
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), 15000);
+        sending = true; submit.disabled = true; submit.textContent = 'Submitting…';
+        status.textContent = 'Saving your enquiry securely…';
+        try {
+          const response = await fetch(ENDPOINT, {
+            method:'POST', headers:{'Content-Type':'application/json'},body:JSON.stringify(body),
+            signal:controller.signal,credentials:'omit',mode:'cors'
+          });
+          const result = await response.json().catch(() => ({}));
+          if (!response.ok || result.ok !== true) throw new Error(result.error || 'Unable to save your enquiry.');
+          document.getElementById('form-shell').hidden = true;
+          form.reset();
+          document.getElementById('success').hidden = false;
+          document.getElementById('success').focus();
+          document.title = 'Enquiry received — Daniel Hughes Tattoos';
+        } catch (error) {
+          status.textContent = error.name === 'AbortError'
+            ? 'The connection timed out. Please try again; your enquiry may already have been saved.'
+            : (error.message || 'Something went wrong. Please try again or contact the studio by email.');
+        } finally {
+          clearTimeout(timer);sending = false;submit.disabled = false;submit.innerHTML = 'Send enquiry <span aria-hidden="true">→</span>';
+        }
+      });
+      // Only show a dynamic hint; labels already explain the preferred-contact requirement.
+      document.getElementById('preferredContact').addEventListener('change', event => {
+        document.getElementById('contact-hint').textContent = event.target.value === 'email'
+          ? 'I will reply to the email address above.'
+          : 'Please enter your ' + (event.target.value === 'phone' ? 'phone number' : 'Instagram handle') + ' above.';
+      });
+    })();
+  </script>
+</body>
+</html>
