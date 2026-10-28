@@ -1,7 +1,18 @@
 // Daniel Hughes Tattoos: anonymous, rate-limited, private enquiry intake.
 // This endpoint is deliberately separate from all INKSIGHTS CRM workflows.
 const SUPABASE_URL = Deno.env.get("SUPABASE_URL") || "";
-const SERVICE_KEY = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
+function serviceKey(): string {
+  const configured = Deno.env.get("SUPABASE_SECRET_KEYS");
+  if (configured) {
+    try {
+      const keys = JSON.parse(configured) as Record<string,string>;
+      const active = keys.default || Object.values(keys)[0];
+      if (active) return active;
+    } catch { /* Fall back to legacy key. */ }
+  }
+  return Deno.env.get("SUPABASE_SERVICE_ROLE_KEY") || "";
+}
+const SERVICE_KEY = serviceKey();
 const ALLOWED_ORIGINS = new Set([
   "https://danhughestattoos.co.uk",
   "https://www.danhughestattoos.co.uk",
@@ -27,7 +38,7 @@ const respond = (origin: string | null, body: Record<string,unknown>, status=200
 async function db(path: string, init: RequestInit) {
   return fetch(SUPABASE_URL + "/rest/v1/" + path, {
     ...init,
-    headers: { "apikey":SERVICE_KEY, "Authorization":"Bearer " + SERVICE_KEY,
+    headers: { "apikey":SERVICE_KEY, ...(SERVICE_KEY.startsWith("sb_secret_") ? {} : {"Authorization":"Bearer " + SERVICE_KEY}),
       "Content-Type":"application/json", "Prefer":"return=minimal", ...(init.headers || {}) }
   });
 }
