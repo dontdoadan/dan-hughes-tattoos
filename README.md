@@ -8,7 +8,8 @@ Source for [danhughestattoos.co.uk](https://danhughestattoos.co.uk), hosted on V
 - `enquire.html` — three-stage tattoo enquiry form and its existing Supabase submission logic.
 - `privacy.html` — privacy notice.
 - `site.css` — shared visual design system, header, navigation, typography, responsive layouts.
-- `site-nav.js` — small keyboard-friendly mobile navigation behaviour.
+- `site-nav.js` — fullscreen navigation, keyboard controls, focus management, and responsive menu closure.
+- `kinetic.css` — optional high-impact editorial design direction layered on top of the shared base styles.
 - `backend/` — existing private tattoo enquiry intake implementation and documentation.
 
 The HTML pages are static; no frontend build step is required.
@@ -34,3 +35,20 @@ The homepage still contains a `noindex, nofollow` robots directive carried over 
 7. Verify Vercel preview deployment is READY before merging into `main`.
 
 Do not change form endpoint, submission payload, age/privacy validation, or deposit copy as part of visual redesign work.
+
+
+## Kinetic editorial design preview
+
+The `design/kinetic-editorial-v2-20261028` branch develops a more expressive personal-brand visual language: oversized typography, alternating light/dark editorial sections, a signature yellow-green accent, full-screen site navigation, subtle motion and a prominent enquiry funnel.
+
+This visual direction is original to Daniel Hughes Tattoos; no other site's graphics, fonts, photographs or assets were copied.
+
+Before publication review:
+- Check homepage at 320, 390, 768, 1024 and 1440 px for text clipping and horizontal overflow.
+- Open and close the fullscreen menu via pointer, keyboard, section links and Escape.
+- Check the enquiry flow including all three steps, existing form submissions and the consent checkboxes.
+- Replace typographic commission category panels with appropriately licensed, consent-cleared original tattoo images when curated portfolio photography becomes available.
+- Confirm that the display typography and acid accent are aligned with desired studio positioning.
+- Remove `noindex, nofollow` only when search visibility is deliberately approved.
+
+This branch is a visual proposal, not an automatic replacement of the approved production design.
