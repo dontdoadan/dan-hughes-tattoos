@@ -100,6 +100,7 @@ button,input,textarea,select{font:inherit}
 .cta-title{font-size:clamp(58px,8.2vw,126px);line-height:.91;max-width:1120px;margin:27px 0 32px}
 .cta-row{display:flex;align-items:end;justify-content:space-between;gap:30px}
 .cta-row p{max-width:550px;color:#5e5e56;font-size:16px;line-height:1.75;margin:0}
+.cta-fallback{font-size:12px;line-height:1.6;color:#626158;margin:31px 0 0}.cta-fallback a{text-underline-offset:4px}
 .cta-section .action-button.primary{background:var(--ink);color:var(--paper);border-color:var(--ink);white-space:nowrap}
 .cta-section .action-button.primary:hover{background:#4f463b}
 .global-footer{padding:40px 0 35px;border-top:1px solid var(--rule)}
