@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10100f">
+  <meta name="theme-color" content="#10110f">
   <meta name="description" content="Start a private tattoo commission with Daniel Hughes. Tell us about your custom black and grey realism tattoo idea and request a consultation.">
   <title>Start Your Project — Daniel Hughes Tattoos</title>
   <style>
@@ -62,12 +62,26 @@
     @media(max-width:430px){.site-header{padding:18px 20px}.return{font-size:10px}.return span{display:none}.editorial{padding:44px 24px 30px}h1{font-size:56px}.form-panel{padding:34px 20px 32px}.choices{gap:7px}.choice label{padding:12px 10px;min-height:68px;font-size:11px}.two{grid-template-columns:1fr;gap:0}.form-actions{gap:8px}.btn-main{min-width:0;flex:1;padding:0 14px}.micro{display:block}.micro span{display:block;margin:5px 0}.step-title{font-size:39px}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition:none!important}}
   </style>
+  <link rel="stylesheet" href="/site.css">
+  <style>#project-form{scroll-margin-top:96px}@media(max-width:760px){#project-form{scroll-margin-top:76px}}</style>
 </head>
-<body>
+<body class="enquiry-page">
   <a class="skip" href="#project-form">Skip to enquiry form</a>
-  <header class="site-header">
-    <a class="wordmark" href="/">Daniel Hughes<br>Tattoos</a>
-    <a class="return" href="/"><span aria-hidden="true">←</span> Return to the studio</a>
+  <header class="global-header">
+    <div class="site-wrap global-header-inner">
+      <a class="global-wordmark" href="/" aria-label="Daniel Hughes Tattoos, home"><span>Daniel Hughes</span><span>Tattoos</span></a>
+      <nav class="global-nav" aria-label="Primary navigation">
+        <a href="/#work">The work</a><a href="/#approach">The approach</a><a href="/#studio">The studio</a>
+        <a class="global-nav-cta" href="/enquire.html" aria-current="page">Enquiry form <span aria-hidden="true">↗</span></a>
+      </nav>
+      <details class="mobile-navigation">
+        <summary aria-label="Open navigation menu">Menu <span class="menu-lines" aria-hidden="true"></span></summary>
+        <nav class="mobile-navigation-panel" aria-label="Mobile navigation">
+          <a href="/">Home</a><a href="/#work">The work</a><a href="/#approach">The approach</a><a href="/#studio">The studio</a>
+          <a href="/enquire.html" aria-current="page">Enquiry form ↗</a>
+        </nav>
+      </details>
+    </div>
   </header>
   <main class="layout">
     <aside class="editorial" aria-label="About your commission">
