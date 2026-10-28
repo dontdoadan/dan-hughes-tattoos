@@ -152,7 +152,7 @@
               <button class="btn btn-main" type="submit" id="submit" hidden>Send enquiry <span aria-hidden="true">→</span></button>
             </div>
             <p class="submit-status" id="status" role="alert" aria-live="polite"></p>
-            <div class="micro"><span>Private studio · South London</span><span>Thoughtfully planned. Personally designed.</span></div>
+            <div class="micro"><span>Private studio · South London</span><span>Prefer email? <a href="mailto:dontdoadan@icloud.com?subject=Tattoo%20Enquiry">Contact the studio directly</a></span></div>
           </div>
         </form>
       </div>
@@ -179,7 +179,6 @@
       const submit = document.getElementById('submit');
       let stage = 0, sending = false;
       const requestId = crypto.randomUUID();
-      const data = new FormData(form);
       function go(target) {
         stage = Math.min(2, Math.max(0, target));
         stages.forEach((section, i) => { section.hidden = i !== stage; });
