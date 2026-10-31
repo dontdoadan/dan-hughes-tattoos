@@ -1,0 +1,223 @@
+/* Midnight / Mint / Blue
+   Visual-only layer, deliberately separate from the layout and enquiry logic.
+   All values are original to Daniel Hughes Tattoos; no remote dependencies. */
+:root{
+  color-scheme:dark;
+  --site-bg:#09121c;
+  --site-surface:#142332;
+  --site-ink:#f5f9ff;
+  --site-muted:#b6c8d7;
+  --site-border:rgba(189,219,239,.17);
+  --site-sage:#173042;
+  --site-sage-strong:#214455;
+  --site-mint:#a4f6d6;
+  --site-blue:#91bcff;
+  --site-deep:#080f19;
+  --site-input:#0c1927;
+}
+body{background:var(--site-bg);color:var(--site-ink)}
+:focus-visible{outline-color:var(--site-mint)}
+::selection{background:var(--site-mint);color:var(--site-deep)}
+.skip-link{background:var(--site-mint);color:var(--site-deep)}
+.global-header{background:rgba(9,18,28,.95);border-color:var(--site-border)}
+.global-wordmark{color:var(--site-ink)}
+.global-wordmark::before{background:var(--site-mint);color:var(--site-deep)}
+.global-wordmark span:last-child{color:#b7cad8}
+.global-nav>a:not(.global-nav-cta){color:#c8d8e4}
+.global-nav>a:not(.global-nav-cta):hover{color:var(--site-mint)}
+.global-nav-cta,
+.pill-button.primary{
+  background:var(--site-mint);color:var(--site-deep);
+  border-color:var(--site-mint);
+}
+.global-nav-cta:hover,
+.pill-button.primary:hover{
+  background:#c6ffe9;color:var(--site-deep);
+  border-color:#c6ffe9;
+}
+.pill-button.secondary{
+  color:var(--site-ink);background:#17293c;border-color:#405b70;
+}
+.pill-button.secondary:hover{background:#263f55;color:#fff}
+.menu-lines,.menu-lines::before,.menu-lines::after{background:var(--site-ink)}
+.mobile-navigation-panel{
+  background:#122334;border-color:#365066;
+  box-shadow:0 24px 60px rgba(0,0,0,.4);
+}
+.mobile-navigation-panel a{color:var(--site-ink)}
+.mobile-navigation-panel a:hover{background:#214052;color:var(--site-mint)}
+.mobile-navigation-panel a:last-child{
+  background:var(--site-mint);color:var(--site-deep);
+}
+.mobile-navigation-panel a:last-child:hover{background:#c6ffe9;color:var(--site-deep)}
+.section-label{color:var(--site-mint)}
+.section-label::before{background:var(--site-blue)}
+.hero-copy h1{color:var(--site-ink)}
+.hero-copy h1 span{color:var(--site-mint)}
+.hero-copy p:not(.section-label){color:var(--site-muted)}
+.hero-fine{color:#94b6d2}
+.hero-feature{
+  color:var(--site-ink);
+  background:
+    radial-gradient(circle at 85% 12%,rgba(145,188,255,.22),transparent 42%),
+    radial-gradient(circle at 14% 86%,rgba(164,246,214,.17),transparent 46%),
+    linear-gradient(145deg,#1c3c50,#102335 75%);
+  border-color:rgba(164,246,214,.27);
+}
+.hero-feature-top{color:#cee5f4}
+.hero-feature-seal{border-color:rgba(164,246,214,.46)}
+.hero-feature-seal::before,.hero-feature-seal::after{border-color:rgba(145,188,255,.3)}
+.hero-feature-seal strong{color:var(--site-mint)}
+.hero-feature-bottom p{color:#f4fbff}
+.hero-feature-bottom span{color:#b9d2e6}
+.section-heading h2{color:var(--site-ink)}
+.section-heading p{color:var(--site-muted)}
+.work-section{
+  background:#0d1926;border-color:var(--site-border);
+}
+.work-card{
+  background:linear-gradient(155deg,#1b3545,#132535);
+  border-color:rgba(164,246,214,.14);
+}
+.work-card:nth-child(2){
+  background:linear-gradient(155deg,#1a3049,#13253d);
+  border-color:rgba(145,188,255,.19);
+}
+.work-card:nth-child(3){
+  background:linear-gradient(155deg,#18323d,#122631);
+}
+.work-card .number{color:var(--site-mint)}
+.work-card:nth-child(2) .number{color:var(--site-blue)}
+.work-card h3{color:#f6fbff}
+.work-card p{color:#bdd0df}
+.process-section{background:var(--site-bg)}
+.process-card{background:#122334;border-color:var(--site-border)}
+.process-card .number{background:#234555;color:var(--site-mint)}
+.process-card:nth-child(2) .number{background:#263e60;color:var(--site-blue)}
+.process-card h3{color:#f5f9ff}
+.process-card p{color:var(--site-muted)}
+.studio-panel{
+  color:var(--site-ink);
+  background:
+    radial-gradient(circle at 96% 10%,rgba(145,188,255,.15),transparent 45%),
+    linear-gradient(135deg,#183749,#142b3e);
+  border:1px solid rgba(164,246,214,.15);
+}
+.studio-panel h2{color:#fff}
+.studio-panel p:not(.section-label){color:#c0d6e5}
+.studio-note{color:#dbf8ed;background:rgba(10,24,36,.62);border:1px solid rgba(164,246,214,.18)}
+.cta-panel{
+  color:#fff;
+  background:
+    radial-gradient(circle at 85% 10%,rgba(145,188,255,.18),transparent 40%),
+    linear-gradient(125deg,#112336,#0a1726);
+  border:1px solid rgba(145,188,255,.2);
+}
+.cta-panel .section-label{color:var(--site-mint)}
+.cta-panel h2{color:#fff}
+.cta-panel p:not(.section-label),
+.cta-panel .email-note{color:#bbcede}
+.cta-panel .email-note a{color:var(--site-mint)}
+.cta-panel .pill-button{
+  color:var(--site-deep);background:var(--site-mint);border-color:var(--site-mint);
+}
+.cta-panel .pill-button:hover{background:#c6ffe9;color:var(--site-deep)}
+.global-footer{color:var(--site-ink);background:var(--site-bg);border-color:var(--site-border)}
+.footer-brand{color:#f5f9ff}
+.footer-sub,.footer-bottom{color:#a4b9c9}
+.footer-links{color:#c4d5e2}
+.footer-links a:hover{color:var(--site-mint)}
+
+/* Privacy page uses the same dark surfaces and legible typography. */
+.privacy-page{background:var(--site-bg);color:var(--site-ink)}
+.privacy-content .eyebrow{color:var(--site-mint)}
+.privacy-content h1,.privacy-content h2,.privacy-content strong{color:var(--site-ink)}
+.privacy-content p,.privacy-content li{color:#b9cad8}
+.privacy-content a{color:var(--site-mint)}
+.privacy-content p a:hover,.privacy-content li a:hover{color:#d2ffef}
+
+/* Three-stage enquiry UI: preserve all inputs, text, validation and submit logic. */
+.enquiry-page{background:var(--site-bg);color:var(--site-ink)}
+.enquiry-page .global-header{color:var(--site-ink)}
+.enquiry-page .editorial{
+  color:var(--site-ink);
+  background:
+    radial-gradient(circle at 90% 9%,rgba(145,188,255,.21),transparent 47%),
+    linear-gradient(150deg,#1b394b,#102131 80%);
+  border:1px solid rgba(164,246,214,.21);
+}
+.enquiry-page .editorial .eyebrow{color:var(--site-mint)}
+.enquiry-page .editorial h1{color:#f6fbff}
+.enquiry-page .editorial h1 em{color:var(--site-mint)}
+.enquiry-page .editorial .lead{color:#c3d8e7}
+.enquiry-page .editorial-foot{
+  color:#b4d5e6;border-top-color:rgba(164,246,214,.23);
+}
+.enquiry-page .form-panel{
+  background:#122334;color:var(--site-ink);
+  border:1px solid var(--site-border);
+}
+.enquiry-page .form-top,.enquiry-page .form-top strong{color:#d1e0eb}
+.enquiry-page .progress span{background:#30485b}
+.enquiry-page .progress span.active{background:var(--site-mint)}
+.enquiry-page .stage-kicker{color:var(--site-mint)}
+.enquiry-page .step-title,.enquiry-page .success h2{color:#f5f9ff}
+.enquiry-page .step-copy{color:#b7cbdc}
+.enquiry-page .field-label,.enquiry-page .group legend{color:#e1eef7}
+.enquiry-page .field-label small{color:#acc3d6}
+.enquiry-page .choice label{
+  background:#0d1b2a;border:1px solid #3a5368;
+  color:#d7e7f1;
+}
+.enquiry-page .choice label::after{color:var(--site-blue)}
+.enquiry-page .choice input:checked+label{
+  background:var(--site-mint);color:var(--site-deep);
+  border-color:var(--site-mint);
+}
+.enquiry-page .choice input:checked+label::after{color:var(--site-deep)}
+.enquiry-page .choice input:focus-visible+label{
+  outline:3px solid var(--site-blue);outline-offset:2px;
+}
+.enquiry-page .field,
+.enquiry-page select.field{
+  color:var(--site-ink);background-color:var(--site-input);
+  border:1px solid #466176;
+}
+.enquiry-page .field::placeholder{color:#98afc3}
+.enquiry-page .field:focus{
+  border-color:var(--site-mint);
+  box-shadow:0 0 0 3px rgba(164,246,214,.18);
+}
+.enquiry-page select.field{
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='14' height='14'%3E%3Cpath d='m6 9 6 6 6-6' fill='none' stroke='%23A4F6D6' stroke-width='2'/%3E%3C/svg%3E");
+  background-position:right 17px center;
+  background-repeat:no-repeat;
+  background-size:14px;
+}
+.enquiry-page select.field option{background:#122334;color:#f5f9ff}
+.enquiry-page .hint{color:#b4cada}
+.enquiry-page .hint[style]{border-left-color:var(--site-blue)!important}
+.enquiry-page .consent{color:#c5d9e8}
+.enquiry-page .consent input{accent-color:var(--site-mint)}
+.enquiry-page .consent a,.enquiry-page .micro a{color:var(--site-mint)}
+.enquiry-page .btn-main{
+  background:var(--site-mint);color:var(--site-deep);
+  border-color:var(--site-mint);
+}
+.enquiry-page .btn-main:hover{
+  background:#c6ffe9;color:var(--site-deep);
+}
+.enquiry-page .btn-main:disabled{opacity:.6;cursor:wait}
+.enquiry-page .btn-back{color:#d5e5f0}
+.enquiry-page .micro{border-color:#344a5c;color:#aec5d7}
+.enquiry-page .submit-status{color:#ffc4bb}
+.enquiry-page .success-mark{color:var(--site-mint);border-color:var(--site-mint)}
+.enquiry-page .success p{color:#c1d3e0}
+.enquiry-page .details{
+  color:#d6e6f1;border-color:#344c5f;
+}
+.enquiry-page .details strong{color:#fff}
+.enquiry-page .skip{background:var(--site-mint);color:var(--site-deep)}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{transition:none!important}
+}
