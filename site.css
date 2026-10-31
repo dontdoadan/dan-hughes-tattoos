@@ -24,8 +24,8 @@ button,input,textarea,select{font:inherit}
 .skip-link:focus{top:12px}
 .global-header{position:sticky;top:0;z-index:40;background:rgba(247,247,244,.96);border-bottom:1px solid var(--site-border);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
 .global-header-inner{display:flex;align-items:center;justify-content:space-between;gap:22px;min-height:86px}
-.global-wordmark{display:inline-flex;align-items:center;gap:12px;font-size:15px;line-height:1.2;font-weight:850;letter-spacing:-.045em;text-decoration:none;white-space:nowrap}
-.global-wordmark::before{content:"DH";flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:15px;color:#fff;background:var(--site-ink);font-size:14px;font-weight:900;letter-spacing:-.09em}
+.global-wordmark{display:grid;grid-template-columns:42px auto;grid-template-rows:auto auto;align-items:center;gap:0 12px;font-size:15px;line-height:1.2;font-weight:850;letter-spacing:-.045em;text-decoration:none;white-space:nowrap}\n.global-wordmark span:first-child{grid-column:2;grid-row:1;align-self:end}.global-wordmark span:last-child{grid-column:2;grid-row:2;align-self:start}
+.global-wordmark::before{content:"DH";grid-column:1;grid-row:1/span 2;display:grid;place-items:center;width:42px;height:42px;border-radius:15px;color:#fff;background:var(--site-ink);font-size:14px;font-weight:900;letter-spacing:-.09em}
 .global-wordmark span:last-child{display:block;font-size:11px;font-weight:600;letter-spacing:.025em;color:var(--site-muted)}
 .global-nav{display:flex;align-items:center;gap:clamp(16px,2vw,30px)}
 .global-nav>a:not(.global-nav-cta){font-size:13px;font-weight:650;color:#4e554e;text-decoration:none;transition:color .16s}
