@@ -142,7 +142,7 @@
               <div class="group"><label class="field-label" for="budget">Approximate project budget</label><select class="field" id="budget" name="budgetRange"><option value="">Prefer not to say / unsure</option><option value="400-800">£400–£800</option><option value="800-1600">£800–£1,600</option><option value="1600-3200">£1,600–£3,200</option><option value="3200-plus">£3,200+</option></select></div>
             </div>
             <div class="group"><label class="field-label" for="referenceLinks">Reference links <small>(optional)</small></label><textarea class="field" id="referenceLinks" name="referenceLinks" maxlength="1000" style="min-height:86px" placeholder="Pinterest boards, Instagram posts, or links to imagery you like"></textarea><p class="hint">You can also share images by email after we discuss your enquiry.</p></div>
-            <p class="hint" style="border-left:2px solid #bba285;padding-left:14px">Full-day sessions are £400. A 50% deposit is required to confirm a booking, paid at least 7 days before the appointment to allow for design preparation. Submitting this enquiry does not reserve a date.</p>
+            <p class="hint" id="pricing-note" style="border-left:2px solid #bba285;padding-left:14px">Standard full-day sessions are £400 with a 50% deposit. Offer-specific terms may apply. An enquiry does not reserve a date; the booking is only confirmed after agreement and payment.</p>
           </fieldset>
           <fieldset data-step="2" hidden>
             <legend class="sr-only">Your contact details</legend>
@@ -195,6 +195,13 @@
       const submit = document.getElementById('submit');
       let stage = 0, sending = false;
       const requestId = crypto.randomUUID();
+      // Campaign-aware pricing only changes the visible hint, never the existing submission schema.
+      if (new URLSearchParams(location.search).get('utm_campaign') === 'tattoo-booking-release-nov-2026') {
+        document.getElementById('pricing-note').textContent = 'Booking release: agreed full-day sessions are £300 (normally £400). A £100 project deposit confirms the booking and is credited to the final session. Please book your first session at least seven days after deposit payment. An enquiry does not reserve a date.';
+        const firstBudget = form.querySelector('select[name="budgetRange"] option[value=""]');
+        if (firstBudget) firstBudget.textContent = '£300 promotional day / discuss my budget';
+      }
+
       function go(target) {
         stage = Math.min(2, Math.max(0, target));
         stages.forEach((section, i) => { section.hidden = i !== stage; });
