@@ -1,0 +1,35 @@
+
+/* Cohesive editorial finish for the existing secure enquiry flow and privacy page. */
+:root{--studio-paper:#eeeae2;--studio-sand:#c5b194;--studio-muted:#b4afa6;--studio-ink:#0e0e0d;--site-bg:#0e0e0d;--site-surface:#1b1b1a;--site-ink:#eeeae2;--site-muted:#b4afa6;--site-border:rgba(238,234,226,.18)}
+.enquiry-page,.privacy-page{background:#0e0e0d;color:#eeeae2;font-family:Arial,system-ui,sans-serif}
+.enquiry-page .global-header,.privacy-page .global-header{background:#0e0e0dee;border-color:#494640}
+.enquiry-page .global-wordmark::before,.privacy-page .global-wordmark::before{background:var(--studio-sand);color:var(--studio-ink)}
+.enquiry-page .global-nav-cta,.privacy-page .global-nav-cta{background:var(--studio-paper)!important;color:var(--studio-ink)!important;border-color:var(--studio-paper)!important}
+.enquiry-page .global-nav>a:not(.global-nav-cta):hover,.privacy-page .global-nav>a:not(.global-nav-cta):hover{color:var(--studio-sand)}
+.enquiry-page .mobile-navigation-panel,.privacy-page .mobile-navigation-panel{background:#1e1c1a;border-color:#45403a}
+.enquiry-page .mobile-navigation-panel a:last-child,.privacy-page .mobile-navigation-panel a:last-child{background:var(--studio-paper)!important;color:var(--studio-ink)!important}
+.enquiry-page .editorial{background:linear-gradient(145deg,#201e1b,#111110);color:var(--studio-paper);border-color:#49413a}
+.enquiry-page .editorial .eyebrow,.enquiry-page .editorial h1 em,.enquiry-page .stage-kicker{color:var(--studio-sand)}
+.enquiry-page .editorial h1,.enquiry-page .step-title,.enquiry-page .success h2{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.055em}
+.enquiry-page .editorial h1{line-height:.99}
+.enquiry-page .editorial .lead,.enquiry-page .editorial-foot{color:#c6beb1}
+.enquiry-page .form-panel{background:#1b1a19;color:var(--studio-paper);border-color:#403d39}
+.enquiry-page .progress span{background:#443e36}
+.enquiry-page .progress span.active{background:var(--studio-sand)}
+.enquiry-page .field,.enquiry-page select.field{background:#111110;color:var(--studio-paper);border-color:#655e54}
+.enquiry-page .choice label{background:#151412;border:1px solid #595248;color:#ddd6ca}
+.enquiry-page .choice input:checked+label{background:var(--studio-sand);color:var(--studio-ink);border-color:var(--studio-sand)}
+.enquiry-page .choice input:checked+label:after{color:var(--studio-ink)}
+.enquiry-page .choice input:focus-visible+label{outline-color:var(--studio-sand)}
+.enquiry-page .btn-main{background:var(--studio-paper);color:var(--studio-ink);border-color:var(--studio-paper)}
+.enquiry-page .btn-main:hover{background:var(--studio-sand);color:var(--studio-ink)}
+.enquiry-page .hint[style]{border-left-color:var(--studio-sand)!important}
+.enquiry-page .field-label,.enquiry-page .group legend{color:var(--studio-paper)}
+.enquiry-page .form-top,.enquiry-page .form-top strong{color:#d8d0c5}
+.enquiry-page .hint,.enquiry-page .step-copy,.enquiry-page .micro{color:var(--studio-muted)}
+.enquiry-page .consent input{accent-color:var(--studio-sand)}
+.enquiry-page .consent a,.enquiry-page .micro a{color:var(--studio-sand)}
+.enquiry-page .success-mark{border-color:var(--studio-sand);color:var(--studio-sand)}
+.privacy-page .privacy-content .eyebrow,.privacy-page .privacy-content a{color:var(--studio-sand)}
+.privacy-page .privacy-content h1,.privacy-page .privacy-content h2{font-family:Georgia,"Times New Roman",serif;font-weight:400}
+.privacy-page .privacy-content p,.privacy-page .privacy-content li{color:#beb7ac}
