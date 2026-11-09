@@ -1,0 +1,10 @@
+/* Editorial palette alignment for the retained aftercare guidance. */
+:root{--bg:#0e0e0d;--panel:#1b1a19;--ink:#eeeae2;--muted:#b7b1a8;--mint:#c5b194;--blue:#c5b194;--line:#413c35}
+body{background:var(--bg);color:var(--ink);font-family:Arial,system-ui,sans-serif}
+h1,h2,h3{font-family:Georgia,"Times New Roman",serif;font-weight:400;letter-spacing:-.04em}
+.eyebrow{color:var(--mint)}
+.quick,.contact{background:linear-gradient(140deg,#29251f,#161512);border-color:#534a3e}
+.card{background:#1b1a19;border-color:var(--line)}
+.notice{background:#25221e;border-left-color:var(--mint)}
+.btn.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.hero .quick .top,.quick li:before{color:var(--mint)}
