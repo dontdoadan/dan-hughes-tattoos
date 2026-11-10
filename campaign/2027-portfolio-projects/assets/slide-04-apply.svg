@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#10100f"/>
+<circle cx="540" cy="570" r="390" fill="none" stroke="#c6a77f" stroke-opacity=".28" stroke-width="2"/>
+<circle cx="540" cy="570" r="350" fill="none" stroke="#c6a77f" stroke-opacity=".14" stroke-width="1"/>
+<circle cx="540" cy="570" r="300" fill="none" stroke="#c6a77f" stroke-opacity=".18" stroke-width="1" stroke-dasharray="5 14"/>
+<path d="M70 90H1010M70 1260H1010" stroke="#c6a77f" stroke-width="2"/>
+<text x="70" y="68" fill="#c6a77f" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5">DANIEL HUGHES TATTOOS</text>
+<text x="540" y="500" text-anchor="middle" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="74" font-weight="900" letter-spacing="-3">YOUR IDEA.</text>
+<text x="540" y="590" text-anchor="middle" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="74" font-weight="900" letter-spacing="-3">YOUR PROJECT.</text>
+<text x="540" y="680" text-anchor="middle" fill="#c6a77f" font-family="Arial Black,Arial,sans-serif" font-size="74" font-weight="900" letter-spacing="-3">2027.</text>
+<text x="540" y="860" text-anchor="middle" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="25" letter-spacing="2">TEN CUSTOM COMMISSIONS.</text>
+<text x="540" y="905" text-anchor="middle" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="25" letter-spacing="2">APPLICATIONS REVIEWED INDIVIDUALLY.</text>
+<rect x="220" y="1000" width="640" height="100" fill="#c6a77f"/>
+<text x="540" y="1064" text-anchor="middle" fill="#10100f" font-family="Arial Black,Arial,sans-serif" font-size="28" font-weight="900" letter-spacing="2">APPLY FOR CONSIDERATION ↗</text>
+<text x="540" y="1170" text-anchor="middle" fill="#c6a77f" font-family="Arial,sans-serif" font-size="18" letter-spacing="2">DANHUGHES TATTOOS .CO.UK</text>
+<text x="70" y="1300" fill="#c6a77f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">PRIVATE APPOINTMENTS · SOUTH LONDON</text>
+</svg>
