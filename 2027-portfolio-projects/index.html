@@ -178,7 +178,8 @@
   menu.addEventListener("click",function(){var open=header.classList.toggle("mobile-open");menu.setAttribute("aria-expanded",String(open));});
   document.querySelectorAll("#main-nav a").forEach(function(a){a.addEventListener("click",function(){header.classList.remove("mobile-open");menu.setAttribute("aria-expanded","false");});});
   var form=document.getElementById("portfolio-form"),status=document.getElementById("form-status"),submit=document.getElementById("submit-button");
-  var requestId=window.crypto&&crypto.randomUUID?crypto.randomUUID():"req-"+Date.now()+"-"+Math.random().toString(16).slice(2);
+  function newUuid(){if(window.crypto&&crypto.randomUUID)return crypto.randomUUID();var b=new Uint8Array(16);crypto.getRandomValues(b);b[6]=(b[6]&15)|64;b[8]=(b[8]&63)|128;var h=Array.from(b,function(x){return x.toString(16).padStart(2,"0");}).join("");return h.slice(0,8)+"-"+h.slice(8,12)+"-"+h.slice(12,16)+"-"+h.slice(16,20)+"-"+h.slice(20);}
+  var requestId=newUuid();
   document.getElementById("requestId").value=requestId;
   var params=new URLSearchParams(window.location.search);
   document.getElementById("utmSource").value=params.get("utm_source")||"";
@@ -195,6 +196,9 @@
     var item=projects[preference.value];
     if(item){document.getElementById("projectSize").value=item[0];document.getElementById("artisticDirection").value=item[1];}
   });
+  function clearMismatchedPreference(){var item=projects[preference.value];if(item&&(item[0]!==document.getElementById("projectSize").value||item[1]!==document.getElementById("artisticDirection").value))preference.value="";}
+  document.getElementById("projectSize").addEventListener("change",clearMismatchedPreference);
+  document.getElementById("artisticDirection").addEventListener("change",clearMismatchedPreference);
   var imageInput=document.getElementById("images");
   imageInput.addEventListener("change",function(){
     var files=Array.from(imageInput.files||[]),allowed=["image/jpeg","image/png","image/webp","image/heic","image/heif"];
@@ -216,7 +220,7 @@
       var result=await response.json().catch(function(){return {};});
       if(!response.ok||result.ok!==true)throw new Error(result.error||"Your application could not be submitted. Please try again.");
       form.reset();status.className="form-status success";status.textContent="Application received. Thank you. Your submission has been saved for review. This is not a booking confirmation. I’ll contact you if your project is selected for the next stage.";
-      requestId=window.crypto&&crypto.randomUUID?crypto.randomUUID():"req-"+Date.now()+"-"+Math.random().toString(16).slice(2);
+      requestId=newUuid();
       document.getElementById("requestId").value=requestId;
       document.getElementById("utmSource").value=params.get("utm_source")||"";
       document.getElementById("utmMedium").value=params.get("utm_medium")||"";
