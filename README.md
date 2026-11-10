@@ -4,9 +4,20 @@ Source for [danhughestattoos.co.uk](https://danhughestattoos.co.uk), deployed wi
 
 ## Current rebuild
 
-The `rebuild/editorial-monochrome-homepage` branch contains the approved editorial monochrome redesign.
+The `rebuild/editorial-monochrome-homepage` branch contains the approved editorial monochrome redesign with a rounded interface refinement.
 
-- `index.html` — artist-first landing page with bold hero, portfolio image slots, process, artist introduction and enquiry CTA.
+## Site map
+
+- `/` — welcome landing page with book/enquire, enter website and email-update routes.
+- `/home.html` — full modular homepage and portfolio.
+- `/contact.html` — contact routes and appointment-only information.
+- `/booking.html` — enquiry, planning, deposit and confirmation process.
+- `/offers.html` — project releases and promotion information.
+- `/aftercare.html` — general aftercare guidance and when to seek medical advice.
+- `/enquire.html` — existing three-stage enquiry form.
+- `/privacy.html` — privacy notice.
+
+- `index.html` — dedicated welcome/entry page, modular homepage, portfolio image slots, process, artist introduction and enquiry CTA.
 - `site.css` — reusable modular layout and responsive design system.
 - `dark-theme.css` — cross-page monochrome treatment for the enquiry and privacy pages.
 - `enquire.html` — existing three-stage enquiry flow and backend submission; visual styling only.
@@ -19,7 +30,7 @@ The `rebuild/editorial-monochrome-homepage` branch contains the approved editori
 - Display: Archivo Black.
 - Supporting typography: Poppins.
 - Palette: near-black `#111111`, warm off-white `#f4f3ef`, white and neutral greys.
-- Editorial hierarchy, square-corner controls, generous spacing and image-led sections.
+- Editorial hierarchy, rounded pill CTAs, rounded cards and image containers, generous spacing and image-led sections.
 - Modular hero, portfolio, process, artist, enquiry and footer sections.
 - Responsive desktop and mobile layouts.
 
