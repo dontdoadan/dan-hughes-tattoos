@@ -15,6 +15,7 @@ The 2027 campaign uses dedicated tattoo-only tables in the existing Supabase pro
 | `tattoo_portfolio_2027_payments` | Deposit, instalments, final payments and refunds |
 | `tattoo_portfolio_2027_sessions` | Session dates, start/end time, breaks and actual tattooing minutes |
 | `tattoo_portfolio_2027_content` | Content asset register, permissions and publishing status |
+| `tattoo_portfolio_2027_image_permissions` | Separate client photography/video permissions by channel and identity scope |
 | `tattoo_portfolio_2027_attempts` | Pseudonymous anti-spam rate-limit records |
 
 ### Views
