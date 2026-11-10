@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#10100f">
   <meta name="description" content="Ten custom tattoo commissions. One 2027 portfolio. Apply to be considered for a quarter, half or full sleeve project with Daniel Hughes.">
+  <link rel="canonical" href="https://danhughestattoos.co.uk/2027-portfolio-projects/">
+  <meta property="og:type" content="website"><meta property="og:title" content="2027 Portfolio Projects — Daniel Hughes Tattoos"><meta property="og:description" content="Ten custom tattoo commissions. Three project sizes. Fixed agreed project pricing."><meta property="og:url" content="https://danhughestattoos.co.uk/2027-portfolio-projects/"><meta name="twitter:card" content="summary">
   <meta name="robots" content="noindex,nofollow">
   <title>2027 Portfolio Projects — Daniel Hughes Tattoos</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -120,6 +122,7 @@
       <div class="form-shell">
         <aside class="form-aside"><p class="eyebrow">Before you apply</p><h3>Good projects start with a clear brief.</h3><p>You do not need a finished design. Tell me what matters to you, what you want the piece to communicate and where you want it.</p><ul><li>Applicants must be 18 or over.</li><li>Applications are reviewed individually.</li><li>Only ten projects will be selected.</li><li>A booking is confirmed separately by agreement and deposit.</li><li>Reference images are private and used to assess your application.</li></ul></aside>
         <form class="application-form" id="portfolio-form" enctype="multipart/form-data" novalidate>
+          <noscript><p class="form-status">JavaScript is required to submit this application. Please enable it or email the studio.</p></noscript>
           <fieldset class="form-section"><legend>01 / About you</legend><div class="field-grid">
             <div class="field"><label for="fullName">Full name *</label><input id="fullName" name="fullName" autocomplete="name" required maxlength="120"></div>
             <div class="field"><label for="email">Email address *</label><input id="email" name="email" type="email" autocomplete="email" required maxlength="254"></div>
@@ -142,7 +145,7 @@
             <label class="check"><input type="checkbox" name="ageConfirmed" required><span>I confirm that I am 18 years of age or older. *</span></label>
             <label class="check"><input type="checkbox" name="privacyAccepted" required><span>I have read the <a href="/privacy.html#portfolio-2027" target="_blank" rel="noopener">privacy notice</a> and understand how my application details and reference images will be used. *</span></label>
             <label class="check"><input type="checkbox" name="marketingConsent"><span>I’m happy to receive occasional updates about Daniel Hughes Tattoos. This is optional and can be withdrawn at any time.</span></label>
-            <label class="check"><input type="checkbox" name="imageRightsConfirmed" required><span>I confirm I have permission to share the reference images I upload. *</span></label>
+            <label class="check"><input type="checkbox" name="imageRightsConfirmed"><span>I confirm I have permission to share the reference images I upload. *</span></label>
             <div class="field" style="position:absolute;left:-10000px" aria-hidden="true"><label for="website">Leave this field blank</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
           </fieldset>
           <input type="hidden" name="requestId" id="requestId">
@@ -199,13 +202,13 @@
   function clearMismatchedPreference(){var item=projects[preference.value];if(item&&(item[0]!==document.getElementById("projectSize").value||item[1]!==document.getElementById("artisticDirection").value))preference.value="";}
   document.getElementById("projectSize").addEventListener("change",clearMismatchedPreference);
   document.getElementById("artisticDirection").addEventListener("change",clearMismatchedPreference);
-  var imageInput=document.getElementById("images");
+  var imageInput=document.getElementById("images"),imageRightsInput=form.elements.imageRightsConfirmed;
   imageInput.addEventListener("change",function(){
     var files=Array.from(imageInput.files||[]),allowed=["image/jpeg","image/png","image/webp","image/heic","image/heif"];
     if(files.length>5||files.some(function(f){return f.size>5*1024*1024||allowed.indexOf(f.type)===-1;})||files.reduce(function(n,f){return n+f.size;},0)>20*1024*1024){
       status.textContent="Please use up to five JPG, PNG, WebP or HEIC images, no larger than 5 MB each and 20 MB combined.";
-      imageInput.value="";
-    }else{status.textContent="";}
+      imageInput.value="";imageRightsInput.required=false;
+    }else{imageRightsInput.required=files.length>0;status.textContent="";}
   });
   form.addEventListener("submit",async function(event){
     event.preventDefault();status.className="form-status";status.textContent="";
@@ -219,7 +222,7 @@
       var response=await fetch("https://ukaxsqwnkoqbbsufpzga.supabase.co/functions/v1/portfolio-2027-intake",{method:"POST",body:data,credentials:"omit",mode:"cors"});
       var result=await response.json().catch(function(){return {};});
       if(!response.ok||result.ok!==true)throw new Error(result.error||"Your application could not be submitted. Please try again.");
-      form.reset();status.className="form-status success";status.textContent="Application received. Thank you. Your submission has been saved for review. This is not a booking confirmation. I’ll contact you if your project is selected for the next stage.";
+      form.reset();imageRightsInput.required=false;status.className="form-status success";status.textContent="Application received. Thank you. Your submission has been saved for review. This is not a booking confirmation. I’ll contact you if your project is selected for the next stage.";
       requestId=newUuid();
       document.getElementById("requestId").value=requestId;
       document.getElementById("utmSource").value=params.get("utm_source")||"";
