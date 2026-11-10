@@ -14,11 +14,15 @@
 - [x] Private image-upload bucket created.
 - [x] Reference image upload validation added.
 - [x] Privacy notice extended for campaign applications and image uploads.
-- [ ] Test on iPhone Safari, Android Chrome and desktop.
-- [ ] Test all required fields, optional marketing consent and contact-method validation.
-- [ ] Test accepted and rejected image formats, file-size limits and multiple uploads.
-- [ ] Confirm each successful application creates one row and private image objects.
-- [ ] Confirm failed submissions do not show a success state.
+- [x] Preview deployment built successfully from the campaign branch.
+- [x] Desktop and 390px viewport layout smoke-tested; no horizontal overflow detected.
+- [x] Ten project cards, size selection and concept-to-size auto-fill checked in browser.
+- [x] Privacy page and campaign privacy section verified in preview.
+- [x] Public application Edge Function reached from the preview origin; invalid image MIME type correctly rejected with HTTP 415.
+- [x] Campaign SVG assets return HTTP 200 from the preview deployment.
+- [ ] Test on physical iPhone Safari and Android Chrome.
+- [ ] Test a successful internal application and real image upload with an explicitly marked test record, then delete the test row and files.
+- [ ] Confirm a failed application never displays a success state.
 - [ ] Configure owner notification and test delivery.
 - [ ] Confirm the business email/contact route is monitored.
 
