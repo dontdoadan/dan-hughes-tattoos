@@ -38,6 +38,8 @@ Do not advertise this as unlimited changes or unlimited tattoos. The promise is 
 - `campaign-content.md` — launch copy, carousel, Reel, Stories, FAQs and paid copy.
 - `selection-scorecard.md` — scoring rubric and balancing rules.
 - `booking-agreement-draft.md` — client agreement draft for solicitor review.
+- `image-permission-form.md` — separate photography/video consent record.
+- `assets/` — editable SVG social graphic source files.
 - `content-production-plan.md` — photography, video and publishing workflow.
 - `tracker-guide.md` — operational database, KPIs and review process.
 - `launch-checklist.md` — final release gates.
