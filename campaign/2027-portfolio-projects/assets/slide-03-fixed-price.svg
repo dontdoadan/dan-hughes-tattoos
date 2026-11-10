@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#171714"/>
+<path d="M70 90H1010M70 1260H1010" stroke="#c6a77f" stroke-width="2"/>
+<text x="70" y="68" fill="#c6a77f" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5">THE SELECTED PROJECT OFFER</text>
+<text x="70" y="290" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="80" font-weight="900" letter-spacing="-4">FIXED PRICE.</text>
+<text x="70" y="390" fill="#c6a77f" font-family="Arial Black,Arial,sans-serif" font-size="80" font-weight="900" letter-spacing="-4">AGREED SCOPE.</text>
+<path d="M70 480H1010" stroke="#c6a77f" stroke-opacity=".5"/>
+<circle cx="105" cy="585" r="23" fill="none" stroke="#c6a77f" stroke-width="2"/><path d="M94 585l8 8 15-18" fill="none" stroke="#c6a77f" stroke-width="3"/>
+<text x="160" y="578" fill="#f2efe8" font-family="Arial,sans-serif" font-size="30" font-weight="700">Original scope included.</text>
+<text x="160" y="620" fill="#b9b4a9" font-family="Arial,sans-serif" font-size="22">Design direction, placement and agreed coverage.</text>
+<circle cx="105" cy="755" r="23" fill="none" stroke="#c6a77f" stroke-width="2"/><path d="M94 755l8 8 15-18" fill="none" stroke="#c6a77f" stroke-width="3"/>
+<text x="160" y="748" fill="#f2efe8" font-family="Arial,sans-serif" font-size="30" font-weight="700">Completion time included.</text>
+<text x="160" y="790" fill="#b9b4a9" font-family="Arial,sans-serif" font-size="22">Extra tattooing time needed for the original brief.</text>
+<circle cx="105" cy="925" r="23" fill="none" stroke="#c6a77f" stroke-width="2"/><path d="M94 925l8 8 15-18" fill="none" stroke="#c6a77f" stroke-width="3"/>
+<text x="160" y="918" fill="#f2efe8" font-family="Arial,sans-serif" font-size="30" font-weight="700">Changes agreed separately.</text>
+<text x="160" y="960" fill="#b9b4a9" font-family="Arial,sans-serif" font-size="22">New coverage or substantial changes are quoted.</text>
+<rect x="70" y="1080" width="940" height="110" fill="#c6a77f"/>
+<text x="105" y="1148" fill="#171714" font-family="Arial Black,Arial,sans-serif" font-size="30" font-weight="900" letter-spacing="-1">ONE COMMISSION. ONE AGREED PRICE.</text>
+<text x="70" y="1300" fill="#c6a77f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">DANIEL HUGHES TATTOOS · 2027</text>
+</svg>
