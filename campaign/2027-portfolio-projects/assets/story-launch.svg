@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+<rect width="1080" height="1920" fill="#10100f"/>
+<circle cx="540" cy="760" r="430" fill="none" stroke="#c6a77f" stroke-opacity=".32" stroke-width="2"/>
+<circle cx="540" cy="760" r="380" fill="none" stroke="#c6a77f" stroke-opacity=".17" stroke-width="1"/>
+<circle cx="540" cy="760" r="320" fill="none" stroke="#c6a77f" stroke-opacity=".18" stroke-width="1" stroke-dasharray="6 16"/>
+<path d="M70 100H1010M70 1820H1010" stroke="#c6a77f" stroke-width="2"/>
+<text x="70" y="75" fill="#c6a77f" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5">DANIEL HUGHES TATTOOS</text>
+<text x="540" y="600" text-anchor="middle" fill="none" stroke="#c6a77f" stroke-width="2" font-family="Arial Black,Arial,sans-serif" font-size="420" font-weight="900" letter-spacing="-25">10</text>
+<text x="540" y="890" text-anchor="middle" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="76" font-weight="900" letter-spacing="-3">PROJECTS.</text>
+<text x="540" y="985" text-anchor="middle" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="76" font-weight="900" letter-spacing="-3">1 PORTFOLIO.</text>
+<text x="540" y="1090" text-anchor="middle" fill="#c6a77f" font-family="Arial,sans-serif" font-size="48" font-weight="700" letter-spacing="10">2027</text>
+<text x="540" y="1320" text-anchor="middle" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">TEN CUSTOM COMMISSIONS.</text>
+<text x="540" y="1365" text-anchor="middle" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">THREE PROJECT SIZES.</text>
+<text x="540" y="1410" text-anchor="middle" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">FIXED AGREED PROJECT PRICING.</text>
+<rect x="210" y="1510" width="660" height="105" fill="#c6a77f"/>
+<text x="540" y="1577" text-anchor="middle" fill="#10100f" font-family="Arial Black,Arial,sans-serif" font-size="29" font-weight="900" letter-spacing="2">APPLICATIONS OPEN ↗</text>
+<text x="540" y="1710" text-anchor="middle" fill="#c6a77f" font-family="Arial,sans-serif" font-size="20" letter-spacing="3">DANHUGHES TATTOOS .CO.UK</text>
+<text x="70" y="1860" fill="#c6a77f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">PRIVATE APPOINTMENTS · SOUTH LONDON</text>
+</svg>
