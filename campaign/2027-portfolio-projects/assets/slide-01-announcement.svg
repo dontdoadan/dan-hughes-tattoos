@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1350" viewBox="0 0 1080 1350">
+<rect width="1080" height="1350" fill="#10100f"/>
+<circle cx="805" cy="610" r="370" fill="none" stroke="#c6a77f" stroke-opacity=".35" stroke-width="2"/>
+<circle cx="805" cy="610" r="330" fill="none" stroke="#c6a77f" stroke-opacity=".18" stroke-width="1"/>
+<circle cx="805" cy="610" r="285" fill="none" stroke="#c6a77f" stroke-opacity=".2" stroke-width="1" stroke-dasharray="5 13"/>
+<path d="M70 90H1010M70 1260H1010" stroke="#c6a77f" stroke-opacity=".65"/>
+<text x="70" y="68" fill="#c6a77f" font-family="Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="5">DANIEL HUGHES TATTOOS</text>
+<text x="70" y="445" fill="none" stroke="#c6a77f" stroke-width="2" font-family="Arial Black,Arial,sans-serif" font-size="450" font-weight="900" letter-spacing="-30">10</text>
+<text x="74" y="630" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="78" font-weight="900" letter-spacing="-3">PROJECTS.</text>
+<text x="74" y="720" fill="#f2efe8" font-family="Arial Black,Arial,sans-serif" font-size="78" font-weight="900" letter-spacing="-3">1 PORTFOLIO.</text>
+<text x="76" y="820" fill="#c6a77f" font-family="Arial,sans-serif" font-size="46" font-weight="700" letter-spacing="10">2027</text>
+<text x="76" y="1045" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">TEN CUSTOM COMMISSIONS.</text>
+<text x="76" y="1085" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">THREE PROJECT SIZES.</text>
+<text x="76" y="1125" fill="#c9c4b9" font-family="Arial,sans-serif" font-size="24" letter-spacing="2">ONE AGREED PROJECT PRICE.</text>
+<text x="76" y="1300" fill="#c6a77f" font-family="Arial,sans-serif" font-size="17" letter-spacing="4">APPLICATIONS OPEN · SOUTH LONDON</text>
+</svg>
