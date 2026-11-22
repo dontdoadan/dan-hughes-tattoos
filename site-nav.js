@@ -1,5 +1,5 @@
 /* Shared navigation behaviour; no dependency on the enquiry form. */
-document.querySelectorAll('.mobile-navigation').forEach(menu => {
+document.querySelectorAll('.mobile-navigation, .mod-menu').forEach(menu => {
   const toggle = menu.querySelector('summary');
   menu.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => { menu.open = false; });
