@@ -14,7 +14,7 @@ A small, static website for a private tattoo studio in South London.
 - `site-nav.js` — closes the mobile menu when a link is chosen or Escape is pressed.
 - `backend/` — existing private enquiry intake implementation.
 
-No framework, build step, remote font, or stock imagery is needed.
+The site remains static HTML with no framework or build step. Google Fonts are loaded for the display and body typefaces.
 
 ## Design system
 
@@ -31,6 +31,6 @@ No framework, build step, remote font, or stock imagery is needed.
 3. Test all three enquiry form stages in a safe environment; do not send dummy customer enquiries to production.
 4. Verify Vercel preview build and production domain mapping.
 5. Confirm real portfolio imagery before public launch.
-6. The homepage retains `noindex, nofollow` from its previous blank state. Review that directive when the website is ready for search.
+6. Confirm the intended indexing and robots policy before production release.
 
 The enquiry submission script, Supabase endpoint, existing consent text and privacy notice body should remain unchanged by visual-only edits.
