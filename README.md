@@ -14,22 +14,15 @@ A small, static website for a private tattoo studio in South London.
 - `site-nav.js` — closes the mobile menu when a link is chosen or Escape is pressed.
 - `backend/` — existing private enquiry intake implementation.
 
-No framework, build step, remote font, or stock imagery is needed.
+The site remains static HTML with no framework or build step. Google Fonts are loaded for the display and body typefaces.
 
 ## Design system
 
-- Base background: midnight navy `#09121c`
-- Cards and surfaces: deep blue-navy `#142332`, `#173042`
-- Main text: near-white `#f5f9ff`
-- Primary accent and enquiry buttons: mint `#a4f6d6`
-- Secondary accent: soft blue `#91bcff`
-- Body font: the existing rounded system-font stack; no third-party fonts
-- Rounded panels, pill buttons, clear visual hierarchy and minimal effects
-- Work / Approach / Studio section links and one prominent `Start a project` action
-
-The dark palette applies consistently to the homepage, existing three-stage enquiry form, and privacy notice. The theme layer deliberately changes appearance only: the form JavaScript, Supabase endpoint and legal copy remain intact.
-
-Homepage categories describe supported tattoo projects. They are not a substitute for a real portfolio; add only genuine, approved tattoo photographs when available.
+- Warm off-white canvas, near-black typography and restrained stone accents.
+- Poppins body typography and Archivo Black display headings.
+- Centred content containers, modular cards, rounded panels and pill-shaped actions.
+- One consistent responsive navigation and visual language across homepage, enquiry, aftercare and privacy pages.
+- The existing three-stage Supabase enquiry flow and privacy copy are retained.
 
 ## Release checklist
 
@@ -38,6 +31,6 @@ Homepage categories describe supported tattoo projects. They are not a substitut
 3. Test all three enquiry form stages in a safe environment; do not send dummy customer enquiries to production.
 4. Verify Vercel preview build and production domain mapping.
 5. Confirm real portfolio imagery before public launch.
-6. The homepage retains `noindex, nofollow` from its previous blank state. Review that directive when the website is ready for search.
+6. Confirm the intended indexing and robots policy before production release.
 
 The enquiry submission script, Supabase endpoint, existing consent text and privacy notice body should remain unchanged by visual-only edits.
